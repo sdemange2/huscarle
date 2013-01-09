@@ -1,0 +1,14 @@
+extends ../layout
+
+block content
+
+  div.auths-show
+
+    h1 #{titulo}
+
+    div.authors-search-body
+    ul.authors-list
+      each autor in autores
+        li: a(href="/auths/show/#{autor._id}") #{autor.nombre}
+
+  .clearfix

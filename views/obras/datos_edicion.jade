@@ -1,0 +1,38 @@
+form.datos_edicion
+  p Otros títulos: 
+    div: input(type="text", name="otrosTitulos", value="#{obra.otrosTitulos}", style="width: 100%")
+
+  p Inicio-Final: 
+    input(type="text", name="fechaInicioObra", value="#{obra.fechaInicioObra}", style="width: 50px; margin-right: 10px")
+    input(type="text", name="fechaFinalObra", value="#{obra.fechaFinalObra}", style="width: 50px")
+    | Hacia: 
+    input(type="text", name="fechaObraHacia", value="#{obra.fechaObraHacia}", style="width: 50px")
+
+  p Dimensiones (cm): 
+    input(type="text", name="alto", value="#{obra.alto}", style="width: 50px; margin-right: 10px")
+    input(type="text", name="ancho", value="#{obra.ancho}", style="width: 50px")
+
+  p Técnica y soporte:
+    div: input(type="text", name="tecnica", value="#{obra.tecnica}", style="width: 100%")
+
+  p Presentada en la Exposición Nacional de: 
+    input(type="text", name="presentadaEnLaExposicionNacionalDe", value="#{obra.presentadaEnLaExposicionNacionalDe}", style="width: 50px")
+
+  P Ubicación actual: 
+    div: input(type="text", placeholder="Ciudad Colección", name="ciudadColeccion", value="#{obra.ciudadColeccion}", style="width: 100%")
+    div: input(type="text", placeholder="Colección", name="coleccion", value="#{obra.coleccion}", style="width: 100%")
+    div: input(type="text", placeholder="En depósito en", name="enDepositoEn", value="#{obra.enDepositoEn}", style="width: 100%")
+    div: input(type="text", placeholder="Institución de depósito", name="institucionDeDeposito", value="#{obra.institucionDeDeposito}", style="width: 100%")
+    div: input(type="text", placeholder="Número de inventario", name="numeroDeInventario", value="#{obra.numeroDeInventario}", style="width: 100%")
+
+  p Datos libres de la obra:
+    div: textarea(style="width: 100%", name="datosLibresEstadoObra") #{obra.datosLibresEstadoObra}
+
+  p Información adicional de la obra:
+    div: textarea(style="width: 100%", name="informacionAdicionalDeLaObra") #{obra.informacionAdicionalDeLaObra}
+
+  p Difusión prensa:
+    div: textarea(style="width: 100%", name="difusionPrensa") #{obra.difusionPrensa}
+
+  p Comentarios:
+    div: textarea(style="width: 100%", name="comentarios") #{obra.comentarios}

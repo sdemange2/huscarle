@@ -1,0 +1,69 @@
+div.general-search
+  input(type="text", placeholder="Buscar...")
+  div.general-search-found
+    div.inner
+
+script(type="text/javascript")
+
+  $('.general-search input[type="text"]').focus(function() {
+    var el = $(this).parent().find('.general-search-found');
+    
+    if(!$(this).val()) {
+      el.hide();
+      el.slideDown(100);
+      el.find('.inner').html('Buscar autores, exposiciones, etiquetas...');
+      $(this).attr('placeholder', '');
+    }
+
+  }).keyup(function(e) {
+    if (e.keyCode == 27) {
+      var el = $(this).parent().find('.general-search-found');
+      el.hide();
+      return;
+    }
+
+    if(e.which === 40 || e.which === 38) return;
+
+    var el = $(this).parent().find('.general-search-found');
+
+    if($(this).val()) {
+      $.get('/buscar/general'
+      , { q: $(this).val() }
+      , function(data) {
+  
+          if(el.is(':hidden'))
+            el.slideDown(100);
+  
+          el.css('background', '#fff');
+          el.find('.inner').html('')
+          el.find('.inner').html(data);
+          $(".general-search-found li:first").addClass('highlight');
+      });
+    }
+    else
+      el.find('.inner').html('Buscar autores, exposiciones, etiquetas...');
+  }).bind("keydown", function (e) {
+      var $prev, $next, $current = $(".general-search-found li.highlight");
+
+      if (e.which === 40) {
+        e.preventDefault();
+        $next = $current.next();
+        if ($next.length) {
+          $current.removeClass("highlight");
+          $next.addClass("highlight");
+        }
+      } 
+      else if (e.which === 38) {
+        e.preventDefault();
+        $prev = $current.prev("li");
+          
+        if ($prev.length) {
+          $current.removeClass("highlight");
+          $prev.addClass("highlight");
+        }
+      }
+
+      if(e.which === 13 && $(".general-search-found li.highlight").length) {
+        document.location.href = $(".general-search-found li.highlight a").attr('href');
+      }
+  });

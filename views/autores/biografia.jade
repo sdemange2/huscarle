@@ -1,0 +1,36 @@
+extends ../layout
+
+block content
+
+  link(rel="stylesheet", href="/javascripts/codemirror/lib/codemirror.css")
+  link(rel="stylesheet", href="/stylesheets/biografia.css")
+
+  div.auths-show
+
+    input(id="idAutor", type="hidden", value="#{autor.id}")
+
+    h1 <span class="nombre">#{autor.nombre}</span> 
+      if autor.ciudadDeNacimiento == autor.provinciaDeNacimiento
+       | (#{autor.ciudadDeNacimiento}
+      else
+       | (#{autor.ciudadDeNacimiento}, #{autor.provinciaDeNacimiento}
+      | , #{autor.fechaDeNacimiento}
+      | - 
+      if autor.ciudadDeDefuncion == autor.provinciaDefuncion
+       | #{autor.ciudadDeDefuncion}
+      else
+       | #{autor.ciudadDeDefuncion}, #{autor.provinciaDefuncion}
+      | , #{autor.fechaDeDefuncion})
+
+    div.toolbar
+      span.button: a(href="/auths/show/#{autor.id}") Volver
+      span.button: a(href="", action="guardar") Guardar
+      span.result
+
+    textarea(id="code", name="code") #{autor.biografia}
+
+    script(src="/javascripts/codemirror/lib/codemirror.js")
+    script(src="/javascripts/codemirror/mode/markdown/markdown.js")
+    script(src="/javascripts/huscarle/biografia.js")    
+
+    div#preview

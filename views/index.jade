@@ -1,0 +1,126 @@
+extends layout
+
+block content
+
+  h1 Autores
+
+  - var abecedario = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+
+  div.subnav
+    ul.abecedario
+      each letra in abecedario
+        li: a.letra(href="##{letra}") #{letra}
+      li 
+        a#nuevo(href="#") 
+          img(src="/images/icons/cc/black/png/round_plus_icon&16.png")
+      li.edicionAutor.hide
+        label(for="nombre") Nombre del autor: 
+        input
+        img.crearAutor(src="/images/icons/cc/black/png/save_icon&16.png")
+    div.clearfix
+
+  div.authors-search-body
+    ul.authors-list
+      each autor in autores
+        li 
+          a(href="/auths/show/#{autor._id}") 
+            if autor.corpus
+              span.corpus
+            else
+              span.nocorpus
+            span #{autor.nombre}
+
+  div.clearfix
+
+  script(type="text/javascript", charset="utf-8")
+
+    function replaceDiacritics(s)
+    {
+        var s;
+
+        var diacritics =[
+            /[\300-\306]/g, /[\340-\346]/g,  // A, a
+            /[\310-\313]/g, /[\350-\353]/g,  // E, e
+            /[\314-\317]/g, /[\354-\357]/g,  // I, i
+            /[\322-\330]/g, /[\362-\370]/g,  // O, o
+            /[\331-\334]/g, /[\371-\374]/g,  // U, u
+            /[\321]/g, /[\361]/g, // N, n
+            /[\307]/g, /[\347]/g, // C, c
+        ];
+
+        var chars = ['A','a','E','e','I','i','O','o','U','u','N','n','C','c'];
+
+        for (var i = 0; i < diacritics.length; i++)
+        {
+            s = s.replace(diacritics[i],chars[i]);
+        }
+
+        return s;
+    }
+
+    var list = { letters: [] };
+    
+    $(".authors-list").children("li").each(function() {
+      var itmLetter = $(this).children('a').text().substring(1,2).toUpperCase();
+
+      if (itmLetter == 'Á')
+        itmLetter = 'A';
+
+      if (itmLetter == '"')
+        itmLetter = 'T';
+      
+      if (!(itmLetter in list)) {
+        list[itmLetter] = [];
+        list.letters.push(itmLetter);
+      }
+
+      list[itmLetter].push($(this));
+    });
+    
+    list.letters.sort();
+    $(".authors-list").empty();
+    
+    $.each(list.letters, function(i, letter) {
+        list[letter].sort(function(a, b) {
+          var aR = replaceDiacritics($(a).children('a').text().toUpperCase());
+          var bR =  replaceDiacritics($(b).children('a').text().toUpperCase());
+          return aR.localeCompare(bR);
+        });
+        var ul = $("<ul/>");
+        $.each(list[letter], function(idx, itm){
+            ul.append(itm);
+        });
+        $(".authors-list")
+        .append($("<li/>")
+        .append($("<a/>")
+        .attr("name", letter.toLowerCase())
+        .addClass("title")
+        .html(letter))
+        .append(ul));
+    });
+
+    $(document).scroll(function(){
+        // If has not activated (has no attribute "data-top"
+        if (!$('.subnav').attr('data-top')) {
+            // If already fixed, then do nothing
+            if ($('.subnav').hasClass('subnav-fixed')) return;
+            // Remember top position
+            var offset = $('.subnav').offset()
+            $('.subnav').attr('data-top', offset.top);
+        }
+
+        if ($('.subnav').attr('data-top') - $('.subnav').outerHeight() <= $(this).scrollTop())
+            $('.subnav').addClass('subnav-fixed');
+        else
+            $('.subnav').removeClass('subnav-fixed');
+    });
+
+    $('#nuevo').click(function(e) {
+      $('.edicionAutor').toggle();
+    });
+
+    $('.crearAutor').click(function(e) {
+      $.post('/autores/create', { nombre: $(this).prev().val()}, function(data) {
+        document.location.href = 'auths/show/' + data;
+      });
+    });

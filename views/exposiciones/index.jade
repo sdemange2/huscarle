@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+
+  h1 Exposiciones
+
+  div.exposiciones-body
+    ul.exposiciones-list
+      each exposicion in exposiciones
+          li: a(href="/exposiciones/show/#{exposicion.ano}") Exposición nacional de #{exposicion.ano}
+
+  div.clearfix

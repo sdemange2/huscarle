@@ -1,0 +1,5 @@
+form(action="/obras/imagen/#{autor.id}/#{obra.id}", method="POST", enctype="multipart/form-data")
+  input(type="file", name="obra")
+  input(type="submit", value="Cambiar imagen")
+  
+input(type="text", name="fuente", placeholder="Fuente de la reproducción",  value="#{obra.fuente}", style="width: 300px")

@@ -1,0 +1,38 @@
+doctype 5
+html
+  head
+    title Pintura lacrimógena
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="/javascripts/jquery/jquery-1.8.2.min.js")
+
+  body
+
+    div.page
+
+      div.page-inner
+
+        div.page-header
+    
+          span.logo
+            a(href="/") Pintura lacrimógena
+          include _partials/general-search
+          ul.menu
+            li
+              a(href="/buscar") 
+                img(src="http://cdn3.iconfinder.com/data/icons/ebpixelicons/Orange/search.gif")
+            li 
+              a(href="/") Autores
+              ul.shadow
+                li: a(href="/galeria/Talleres de artistas") Talleres de aristas
+            li 
+              a(href="/exposiciones") Exposiciones
+              ul.shadow
+                li: a(href="/galeria/El salón") El salón
+                li: a(href="/galeria/Inauguraciones") Inauguraciones
+                li: a(href="/galeria/Jurados y expositores") Jurados y expositores
+                li: a(href="/galeria/El público de los salones") El público de los salones
+                li: a(href="/galeria/Lágrimas en el salón") Lágrimas en el salón
+            li: a(href="/mapa") Mapa
+
+        div.page-body
+          block content

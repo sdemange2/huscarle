@@ -1,0 +1,87 @@
+extends ../layout
+
+block content
+
+  h1 #{nombre} 
+    a(href="#", id="nueva")
+      img(src="/images/icons/cc/black/png/round_plus_icon&16.png")
+
+  div#formularioNueva.hide
+    form(method="post", action="/galerias/upload/file", enctype="multipart/form-data")
+      input(type="hidden", name="galeria", value="#{nombre}")
+      p
+        input(type="text", name="fuente", placeholder="fuente", style="width: 400px")
+      p
+        textarea(placeholder="descripción", name="descripcion", style="width: 400px")
+      p
+        input(type="file", name="imagen")
+      p
+        button(type="submit") Crear imagen
+
+  #container-images
+    for obra in obras
+      div.box(id="#{obra.id}")
+        img(src="/images/galerias/100/#{obra.imagen}", width="100px")
+        p.description_content 
+          !{obra.descripcion}
+          !{obra.fuente}
+        p(style="text-align: right;")
+          a(href="/galerias/eliminar/#{obra.id}", class="eliminar", data-id="#{obra.id}") Eliminar
+
+  // div.navigation.hide
+  //  - for(var i = 1; i < pages; i++)
+  //    a.active(href="/galeria_paginada/#{nombre}/page/#{i}") Página
+
+  // script(src="/javascripts/jquery/jquery.infinitescroll.min.js")
+  script(src="/javascripts/jquery/jquery.masonry.min.js")
+  script(type="text/javascript")
+    $(document).ready(function() {
+      var container = $('#container-images');
+      container.imagesLoaded(function(){
+        container.removeClass('hide');
+        container.masonry({
+          itemSelector : '.box',
+          gutterWidth: 10
+        });
+      });
+      /*
+
+      container.infinitescroll({
+        navSelector  : "div.navigation",            
+        nextSelector : "div.navigation a.active",
+        itemSelector: '#container-images',
+        loading: {
+          msgText: 'Cargando imágenes',
+          finishedMsg: 'No hay más imágenes',
+          img: 'http://i.imgur.com/6RMhx.gif'
+        }
+      },
+      function(newElements) {
+        var newElems = $(newElements);
+        newElems.css({ opacity: 0 });
+        container.imagesLoaded(function() {
+          newElems.css({ opacity: 1 });
+          container.masonry('appended', newElems, true);
+        });
+      });*/
+
+      $('#nueva').on('click', function(e) {
+        e.preventDefault();
+        $('#formularioNueva').toggle('slow');
+      });
+
+      $('.eliminar').on('click', function(e) {
+        e.preventDefault();
+        var id = $(this).attr('data-id');
+        var container = $('#container-images');
+        var box = $('#' + id);
+
+        $.post($(this).attr('href'), function() {
+          box.remove();
+          container.masonry({
+            itemSelector : '.box',
+            gutterWidth: 10
+          });
+        });
+      });
+    });

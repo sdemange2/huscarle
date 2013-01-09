@@ -1,0 +1,86 @@
+p Título: #{obra.tituloObra}
+
+if obra.subtituloObra
+  p Subtítulo: #{obra.subtituloObra}
+
+if obra.otrosTitulos
+  p Otros títulos: #{obra.otrosTitulos}
+
+if obra.fechaObraHacia
+  p Datación: hacia #{obra.fechaObraHacia}
+else if obra.fechaInicioObra && obra.fechaFinalObra
+  p Datación: #{obra.fechaInicioObra}-#{obra.fechaFinalObra}
+else if obra.fechaFinalObra
+  p Datación: #{obra.fechaFinalObra}
+
+if obra.alto
+  p Dimensiones: #{obra.alto} x #{obra.ancho} cm
+
+if obra.tecnica
+  p Técnica y soporte: #{obra.tecnica}
+else
+  p Técnica y soporte: Óleo sobre lienzo
+
+if obra.presentadaEnLaExposicionNacionalDe
+  p Presentada en la Exposición Nacional de 
+    a(href="/exposiciones/show/#{obra.presentadaEnLaExposicionNacionalDe}") #{obra.presentadaEnLaExposicionNacionalDe}
+
+  if obra.premiadaCon
+    ul
+      li Premiada con: #{obra.premiadaCon} 
+        if obra.rOPremios
+          span (R. O. #{obra.rOPremios})
+      if obra.votacionPremio
+        li Votación del premio: #{obra.votacionPremio}
+      if obra.reunciaOficialAlPremio
+        li El autor renuncia oficialmente al premio
+
+if obra.adquisicion
+  ul
+    li Adquisición: #{obra.adquisicion}
+      - if(obra.adquisicion == 'Oficial' && obra.rOAdquisicion)
+        span  (R. O. #{obra.rOAdquisicion})
+      if obra.fechaAdquisicionParticular
+        span  (#{obra.fechaAdquisicionParticular})
+      if obra.precioAdquisicion
+        span , #{obra.precioAdquisicion}
+          if obra.unidad
+            span  #{obra.unidad}
+          else
+            span  pesetas
+    if obra.destinoAdquisicion
+      li Destino de la obra: #{obra.destinoAdquisicion}
+
+if obra.ciudadColeccion
+  if obra.enDepositoEn
+    p Ubicación actual: #{obra.ciudadColeccion}, #{obra.coleccion}, en deposito en #{obra.enDepositoEn}, #{obra.institucionDeDeposito} #{obra.numeroDeInventario}
+  else
+    if obra.numeroDeInventario
+      p Ubicación actual: #{obra.ciudadColeccion}, #{obra.coleccion} #{obra.numeroDeInventario}
+    else
+      p Ubicación actual: #{obra.ciudadColeccion}, #{obra.coleccion}
+else
+  if obra.numeroDeInventario
+    p Ubicación actual: #{obra.coleccion} #{obra.numeroDeInventario}
+  else
+    if obra.coleccion
+      p Ubicación actual: #{obra.coleccion}
+
+if obra.datosLibresEstadoObra || obra.informacionAdicionalDeLaObra
+  p Información complementaria:
+  ul
+    if obra.datosLibresEstadoObra
+      li #{obra.datosLibresEstadoObra}
+    if obra.informacionAdicionalDeLaObra
+      li #{obra.informacionAdicionalDeLaObra}
+
+if obra.difusionPrensa
+  p Difusión:
+    ul
+     li Obra reproducida en:
+      ul
+        li !{obra.difusionPrensa}
+
+if obra.comentarios
+  h3.comentarios(style="padding-top: 10px") Comentarios
+  p #{obra.comentarios}

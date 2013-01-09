@@ -1,0 +1,47 @@
+div.edit_images
+  div.inner
+
+    div.titulo
+      h2 
+        img(src="/images/icons/cc/black/png/image_text_icon&16.png")
+        |  Editar imágenes 
+        a#enviar(href="#") Enviar
+        img.cerrar(src="/images/icons/PNG/dark/16px/16_close.png", style="float: right")
+
+    form#form(action="/obras/imagen/#{autor.id}/#{obra.id}", method="post", enctype="multipart/form-data")
+
+      h3 Imagen principal
+      div.principal
+        img.click(src="/images/corpus/#{obra.imagen}")
+        input(type="file", name="obra", style="visibility:hidden;")
+        p Fuente de la imagen: 
+        input.fuente(name="fuente", value="#{obra.fuente}")
+        div.clearfix
+
+script(src="/javascripts/jquery/droparea.js")
+script(type="text/javascript")
+
+  $('input[type="file"]').change(function(e) {
+    ShowImagePreview($(this)[0].files, $(this).prev());
+  });
+
+  $('.click').click(function() {
+    $(this).next().click();
+    return false;
+  });
+
+  $('#edit_imagenes').click(function() {
+    $('.edit_images').toggle();
+    $('body').append('<div class="overflow"></div>');
+    $('body').css('overflow', 'hidden');
+  });
+
+  $('.cerrar').click(function() {
+    $('.edit_images').toggle();
+    $('.overflow').remove();
+  });
+
+  $('#enviar').click(function(e) {
+    e.preventDefault();
+    $('#form').submit();
+  });

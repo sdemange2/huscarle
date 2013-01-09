@@ -1,0 +1,29 @@
+- if(autor.cargos.length > 0)
+  p Participación en los Jurados de la Exposiciones Nacionales
+  ul
+    each cargo in autor.cargos
+      li 
+        a(href="/autores/query/cargos.funcion/#{cargo.funcion}/Autores ") #{cargo.funcion} 
+        | de la 
+        a(href="/exposiciones/show/#{cargo.exposicion}") Exposición de #{cargo.exposicion}
+
+if autor.elegidoAcadémicoCorrespondienteEn && autor.elegidoAcadémicoCorrespondienteEn
+  p Carrera académica
+  ul
+    if autor.elegidoAcadémicoCorrespondienteEn
+      li Elegido académico correspondiente en #{autor.elegidoAcadémicoCorrespondienteEn} para la ciudad de #{autor.académicoCorrespondienteEnLaCiudadDe}
+    if autor.recibidoEnEnLaAcademiaDeBellasArtesEn
+      li Elegido miembro de la Academia de Bellas Artes en #{autor.elegidoMiembroDeLaAcademiaDeBellasArtesEn}, recibido en #{autor.recibidoEnEnLaAcademiaDeBellasArtesEn}     
+
+- if(autor.galardones.length > 0)
+    p Galardones 
+    ul
+      each galardon in autor.galardones
+        li 
+          a(href="/exposiciones/show/#{galardon.exposicion}") #{galardon.exposicion}: 
+          a(href="/autores/query/galardones.galardon/#{galardon.galardon}/Autores ") #{galardon.galardon} 
+          if galardon.renunciaOficial
+            |  Renuncia oficial del autor
+
+- if(autor.galardones.length == 0 && autor.cargos.length == 0 && !autor.elegidoAcadémicoCorrespondienteEn)
+  p Sin información del autor.

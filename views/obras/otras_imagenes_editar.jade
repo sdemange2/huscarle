@@ -1,0 +1,80 @@
+div.edit_other_images
+  div.inner
+
+    div.titulo
+      h2 
+        img(src="/images/icons/cc/black/png/image_text_icon&16.png")
+        |  Editar otras imagenes 
+        a#enviar_otras(href="#") Enviar
+        img.cerrar_otras(src="/images/icons/PNG/dark/16px/16_close.png", style="float: right")
+
+    form#form_otras(action="/obras/otras/#{autor.id}/#{obra.id}", method="post", enctype="multipart/form-data")
+
+      h3 Otras imágenes
+        a(href="#", id="otra_imagen") 
+          img(src="/images/icons/cc/black/png/round_plus_icon&16.png")
+      div.otras_imagenes
+        - if (obra.otrasImagenes.length)
+          for otraImagen in obra.otrasImagenes
+            div.e
+              img.click(src="/images/corpus/#{otraImagen.imagen}")
+              input.file(type="file", name="otras[#{otraImagen.id}]", style="visibility:hidden;")
+              input.fuente(value="#{otraImagen.fuente}", name="fuente[#{otraImagen.id}]")
+              textarea.descripcion(name="descripcion[#{otraImagen.id}]") #{otraImagen.descripcion}
+              div.clearfix
+        else
+            div
+              img.click
+              input.file(type="file", name="otras[]", style="visibility:hidden;")
+              p Fuente de la imagen: 
+              input.fuente(name="fuente[]")
+              textarea.descripcion(name="descripcion[]")
+              div.clearfix
+
+script(src="/javascripts/jquery/droparea.js")
+script(type="text/javascript")
+
+  $('input[type="file"]').change(function(e) {
+    ShowImagePreview($(this)[0].files, $(this).prev());
+  });
+
+  $('.click').click(function() {
+    $(this).next().click();
+    return false;
+  });
+
+  $('#edit_otras_imagenes').click(function() {
+    $('.edit_other_images').toggle();
+    $('body').append('<div class="overflow"></div>');
+    $('body').css('overflow', 'hidden');
+  });
+
+  $('.cerrar_otras').click(function() {
+    $('.edit_other_images').toggle();
+    $('.overflow').remove();
+  });
+
+  var newId = 0;
+
+  $('#otra_imagen').click(function(e) {
+    e.preventDefault();
+
+    var block = $('.otras_imagenes').find('div').first().clone(true);
+    block.find('input').val('');
+    block.find('textarea').val('');
+    block.find('img').attr('src', '');
+
+    if($('.otras_imagenes').find('div').first().hasClass('e')) {
+      block.find('input.file').attr('name', 'otras[' + newId + ']');
+      block.find('input.fuente').attr('name', 'fuente[' + newId + ']');
+      block.find('textarea.descripcion').attr('name', 'descripcion[' + newId + ']');
+      newId++;
+    }
+
+    $('.otras_imagenes').append(block);
+  });
+
+  $('#enviar_otras').click(function(e) {
+    e.preventDefault();
+    $('#form_otras').submit();
+  });

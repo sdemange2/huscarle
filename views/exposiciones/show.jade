@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+
+  div.exposiciones-show
+
+    h1 Exposición Nacional de #{exposicion.ano}
+
+    h3 Jurado
+    ul
+      each miembro in exposicion.jurado
+        li(style="margin-bottom: 10px")
+          a(href="/auths/show/#{miembro._id}") #{miembro.nombre}<br/>
+          a(href="/autores/query/cargos.funcion/#{miembro.funcion}/Autores ") #{miembro.funcion}
+
+  .clearfix

@@ -1,0 +1,145 @@
+extends ../layout
+
+block content
+
+  div.auths-show
+
+    div#nombre
+      include nombre
+
+    div#edit_basic_auth(style="display:none")
+      form
+        div
+          input(type="text", name="nombre", value="#{autor.nombre}", style="width: 400px")
+        div
+          input(type="text", name="ciudadDeNacimiento", value="#{autor.ciudadDeNacimiento}", style="width: 200px")
+          input(type="text", name="provinciaDeNacimiento", value="#{autor.provinciaDeNacimiento}", style="width: 200px")
+          input(type="text", name="fechaDeNacimiento", value="#{autor.fechaDeNacimiento}", style="width: 40px")
+        div
+          input(type="text", name="ciudadDeDefuncion", value="#{autor.ciudadDeDefuncion}", style="width: 200px")
+          input(type="text", name="provinciaDefuncion", value="#{autor.provinciaDefuncion}", style="width: 200px")
+          input(type="text", name="fechaDeDefuncion", value="#{autor.fechaDeDefuncion}", style="width: 40px")
+        div
+          button#save_basic_auth Guardar cambios
+
+    div.informacion
+      h3 Información
+        a#edit_informacion(href="#") 
+          img(src="/images/icons/PNG/dark/16px/16_edit.png")
+
+      div#informacion_contenido
+        include informacion
+
+    div.obras
+      div.obras-inner
+        h3 Obras 
+          a(href="/autores/galeria/#{autor.id}", target="_blank") 
+            img(src="/images/icons/PNG/dark/16px/16_gallery.png")
+          a#edit_obra(href="#", class="button") 
+            img(src="/images/icons/cc/black/png/round_plus_icon&16.png")
+
+        ul.obras_list
+          li.edit_obra(style="display: none;")
+            input.add_obra(placeholder="Titulo de la obra", name="tituloObra")
+          - if(autor.obras.length > 0)
+            each obra in autor.obras
+              include obra
+
+    div.clearfix
+
+    div.biografia
+      div.biografia-inner
+        h3 Biografía 
+          a(href="/autores/#{autor.id}/biografia", class="button") 
+            img(src="/images/icons/PNG/dark/16px/16_edit.png")
+    
+        if(biografia.length > 0)
+          div 
+            !{biografia}
+        else
+          div 
+            p Sin información
+    
+    h3(style="padding-top: 10px") Etiquetas
+    input.tags-add(type="text", style="clear: both", placeholder="Insertar etiqueta")
+    div.tags
+      div.tags-inner
+        ul.tags-cloud
+          if autor.etiquetas
+            for tag in autor.etiquetas
+              li.tag
+                a(href="") 
+                  span.tag-text #{tag}
+                  span.tag-delete  x
+
+    div.clearfix
+
+  script(type="text/javascript")
+    $('body').on('click', '.edit_basic_auth', function(e) {
+      e.preventDefault();
+      $('#edit_basic_auth').toggle('slow');
+    });
+
+    $('#save_basic_auth').click(function(e) {
+      e.preventDefault();
+      $.post('/autores/save/#{autor.id}', $('#edit_basic_auth form').serialize(), function(data) {
+        $('#nombre').html(data);
+        $('#edit_basic_auth').toggle('slow');
+      });
+    });
+
+    $('#edit_obra').click(function(e) {
+      e.preventDefault();
+      $('.edit_obra').toggle('slow');
+      $('.add_obra').focus();
+    });
+
+    $('.add_obra').keypress(function(event) {
+      if ( event.which == 13 ) {
+        $.post('/autores/obras/add/#{autor.id}', { tituloObra: $(this).val() }, function(data) {
+          $('.obras_list').append(data);
+          $(this).val('');
+          $('.edit_obra').toggle('slow');
+        });
+      }
+    });
+
+    $('#edit_informacion').click(function(e) {
+      e.preventDefault();
+
+      if($(this).hasClass('edit')) {
+        $(this).removeClass('edit');
+        $.get('/autores/informacion/#{autor.id}', function(data) {
+          $('#informacion_contenido').html(data);
+        });
+      }
+      else {
+        $(this).addClass('edit');
+        $.get('/autores/informacion_edicion/#{autor.id}', function(data) {
+          $('#informacion_contenido').html(data);
+        });
+      }
+    });
+
+    $('.tags-add').keypress(function(event) {
+      if ( event.which == 13 ) {
+        var val = $(this).val();
+         event.preventDefault();
+         $.post('/autores/etiquetar/#{autor.id}'
+         , { etiqueta: val }
+         , function(data) {
+          $('.tags-cloud').append('<li class="tag"><a href="#"><span class="tag-text">'+val+'</span><span class="tag-delete"> x</span></a></li>')
+          $('.tags-add').val('');
+         });
+      }
+    });
+
+    $('.tags-cloud').on('click', '.tag-delete', function(e) {
+      e.preventDefault();
+      var li = $(this).parent();
+      $.post('/autores/etiquetas/remove/#{autor.id}'
+       , { etiqueta: li.find('.tag-text').html() }
+       , function(data) {
+        li.remove();
+       });
+    });

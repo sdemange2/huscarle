@@ -1,0 +1,64 @@
+div#titulo
+  h1 
+    span.titulo #{obra.tituloObra}
+    if obra.subtituloObra
+      span.subtitulo . #{obra.subtituloObra}
+    a.edit_titulo(href="#") 
+        img(src="/images/icons/PNG/dark/16px/16_edit.png")
+    a(href="/autores/galeria/#{autor.id}", target="_blank") 
+        img(src="/images/icons/PNG/dark/16px/16_gallery.png")
+    a#edit_imagenes(href="#") 
+        img(src="/images/icons/cc/black/png/image_text_icon&16.png")
+    a#edit_otras_imagenes(href="#") 
+        img(src="/images/icons/cc/black/png/image_text_icon&16.png")
+    a.eliminar(href="#", class="edit_basic_auth") 
+        img(src="/images/icons/PNG/dark/16px/16_close.png")
+
+    - if (obras.length > 1)
+      div#otrasObras
+        img.iconOtrasObras(src="/images/icons/cc/black/png/folder_icon&24.png")
+        div.otrasObras(style="display: none")
+          ul
+            for o in obras
+              li 
+                a(href="/autores/#{autor.id}/obras/#{o.id}") 
+                  if o.imagen
+                    img.a(src="/images/corpus/#{o.imagen}", title="#{o.tituloObra}", width="64px")
+                  else
+                    img.a(src="http://www.ikea.com/es/es/images/products/ribba-marco__39798_PE132824_S4.jpg", title="#{o.tituloObra}", width="64px")
+                  span #{o.tituloObra}
+
+  div.titulo_edicion(style="display: none;")
+    form
+      div
+        input(type="text", name="tituloObra", value="#{obra.tituloObra}", style="width: 400px")
+      div
+        input(type="text", name="subtituloObra", value="#{obra.subtituloObra}", placeholder="Subtítulo", style="width: 400px")
+      button.save_titulo Guardar cambios
+
+    div.clearfix(style="padding: 10px")
+
+script(type="text/javascript")
+  $('.edit_titulo').click(function(e) {
+    e.preventDefault();
+    $('.titulo_edicion').toggle('slow');
+  });
+
+  $('.save_titulo').click(function(e) {
+    e.preventDefault();
+    $.post('/autores/obras/titulo/#{autor.id}/#{obra.id}'
+    , $('.titulo_edicion form').serialize()
+    , function(data) {
+        $('#titulo').html(data);
+        $('#titulo_edicion').toggle('slow');
+    });
+  });
+
+  $('.eliminar').click(function(e) {
+    e.preventDefault();
+    if (confirm('¿Seguro que deseas eliminar la obra')) {
+      $.post('/autores/obras/remove/#{autor.id}', { obra: '#{obra.id}' }, function(data) {
+        window.location.href = '/auths/show/#{autor.id}';
+      });
+    }
+  });

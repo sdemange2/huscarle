@@ -1,0 +1,20 @@
+div
+  div.categoria Autores
+  - if(autores.length > 0)
+    ul
+      for autor in autores
+        li: a(href="/auths/show/#{autor.id}") #{autor.nombre}
+  else
+    p Ningún autor encontrado
+
+  div.clearfix
+  
+  div.categoria Obras
+  - if(obras.length > 0)
+    ul
+      for obra in obras
+        li: a(href="/autores/#{obra.autor._id}/obras/#{obra._id}") #{obra.tituloObra}: #{obra.autor.nombre}
+  else
+    p Ninguna obra encontrada
+  
+  div.clearfix

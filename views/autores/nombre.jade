@@ -1,0 +1,57 @@
+h1
+  span.nombre #{autor.nombre} 
+  if autor.ciudadDeNacimiento || autor.ciudadDeDefuncion
+    if autor.fechaDeDefuncion
+      if autor.ciudadDeNacimiento == autor.provinciaDeNacimiento
+       | (#{autor.ciudadDeNacimiento}
+      else
+       | (#{autor.ciudadDeNacimiento}, #{autor.provinciaDeNacimiento} 
+      if autor.fechaDeNacimiento
+        | , #{autor.fechaDeNacimiento} 
+      else
+        | 
+
+    else
+      if autor.ciudadDeNacimiento == autor.provinciaDeNacimiento
+       | (n. #{autor.ciudadDeNacimiento},
+      else
+       | (n. #{autor.ciudadDeNacimiento}, #{autor.provinciaDeNacimiento}
+      if autor.fechaDeNacimiento
+        | , #{autor.fechaDeNacimiento})
+      else
+        | )
+
+    if autor.fechaDeDefuncion
+      if autor.ciudadDeDefuncion == autor.provinciaDefuncion
+       | - #{autor.ciudadDeDefuncion}
+      else
+       | - #{autor.ciudadDeDefuncion}, #{autor.provinciaDefuncion}
+      if autor.ciudadDeDefuncion
+        | , #{autor.fechaDeDefuncion})
+      else
+        | #{autor.fechaDeDefuncion})
+  else
+    if autor.fechaDeNacimiento
+      | (#{autor.fechaDeNacimiento} 
+
+    if autor.fechaDeDefuncion
+      | - #{autor.fechaDeDefuncion})
+    else
+      | )
+
+  a(href="#", class="edit_basic_auth") 
+    img(src="/images/icons/PNG/dark/16px/16_edit.png")
+  a(href="/galeria/#{autor.nombre}", target="_blank") 
+    img(src="/images/icons/PNG/dark/16px/16_gallery.png")
+  a.eliminar(href="#") 
+    img(src="/images/icons/PNG/dark/16px/16_close.png")
+
+  script(type="text/javascript")
+    $('.eliminar').click(function(e) {
+      e.preventDefault();
+      if (confirm('¿Seguro que deseas eliminar el autor')) {
+        $.post('/autores/remove/#{autor.id}', function(data) {
+          window.location.href = '/';
+        });
+      }
+    });

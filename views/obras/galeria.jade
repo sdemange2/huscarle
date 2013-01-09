@@ -1,0 +1,52 @@
+div#galleria
+  if obra.imagen
+    a(href="/images/corpus/#{obra.imagen}"): img(src="/images/corpus/#{obra.imagen}", data-description="Fuente: #{mdFuente}")
+  else
+    a(href="http://www.ikea.com/es/es/images/products/ribba-marco__39798_PE132824_S4.jpg"): img(src="http://www.ikea.com/es/es/images/products/ribba-marco__39798_PE132824_S4.jpg")
+
+  -if (obra.otrasImagenes.length)
+    for otraImagen in obra.otrasImagenes
+      if otraImagen.imagen
+        if otraImagen.descripcion
+          a(href="/images/corpus/#{otraImagen.imagen}"): img(src="/images/corpus/#{otraImagen.imagen}", data-description="#{otraImagen.descripcion}<br/><br/>Fuente: #{otraImagen.fuente}")
+        else
+          a(href="/images/corpus/#{otraImagen.imagen}"): img(src="/images/corpus/#{otraImagen.imagen}", data-description="Fuente: #{otraImagen.fuente}")
+      else
+        a(href="http://www.ikea.com/es/es/images/products/ribba-marco__39798_PE132824_S4.jpg"): img(src="http://www.ikea.com/es/es/images/products/ribba-marco__39798_PE132824_S4.jpg")        
+
+
+style
+
+
+script(src="/javascripts/galleria/galleria-1.2.8.min.js")
+script(type="text/javascript")
+  Galleria.loadTheme('/javascripts/galleria/themes/azur/galleria.azur.js');
+  Galleria.run('#galleria', {
+    height: 400,
+    width: 400,
+    _toggleCaption: false,
+    _showCaption: true,
+    _showTooltip: false,
+    _locale: {
+        show_captions: 'Mostrar información',
+        hide_captions: 'Ocultar información',
+        play: 'Play slideshow',
+        pause: 'Pause slideshow',
+        enter_fullscreen: 'Pantalla completa',
+        exit_fullscreen: 'Salir',
+        next: 'Siguiente imagen',
+        prev: 'Imagen anterior',
+        showing_image: 'Mostrando imagen %s de %s'
+    }
+  });
+
+  Galleria.ready(function() {
+    this.attachKeyboard({
+      left: this.prev,
+      right: this.next
+    });
+  });
+
+  $('.galleria-info-description a').live('click', function(e) {
+    this.target = '_blank';
+  });

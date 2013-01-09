@@ -1,0 +1,11 @@
+for obra in obras
+  div.box(id="#{obra.id}")
+    img(src="/images/galerias/100/#{obra.imagen}", width="200px")
+    div
+      p.description_content 
+        span: b #{obra.fuente}
+        br
+        br
+        span #{obra.descripcion}
+      p(style="text-align: right;")
+        a(href="") Eliminar

@@ -1,0 +1,114 @@
+extends ../layout
+
+block content
+
+  div.obras-show
+
+    p: a(href="/auths/show/#{autor.id}") #{autor.nombre}
+
+    include titulo
+
+    div.imagen
+      div.imagen-inner
+        include galeria
+
+    div.datos
+      div.datos-inner
+
+        h3 Datos de la obra
+          a.edit_datos(href="#") 
+            img(src="/images/icons/PNG/dark/16px/16_edit.png")
+
+        #datos_contenido
+          include datos        
+
+        h3(style="padding-top: 10px") Etiquetas
+        input.tags-add(type="text", style="clear: both", placeholder="Insertar etiqueta")
+        div.tags
+          div.tags-inner
+            ul.tags-cloud
+              if obra.etiquetas
+                for tag in obra.etiquetas
+                  li.tag
+                    a(href="") 
+                      span.tag-text #{tag}
+                      span.tag-delete  x
+            
+
+    div.clearfix
+
+    include imagenes_editar  
+    include otras_imagenes_editar    
+
+    script(src="/javascripts/jquery/jquery.textextjs.1.3.1.js")
+    script(type="text/javascript")
+
+      $('body').on('click', '.tag-delete', function(e) {
+        e.preventDefault();
+        var li = $(this).parent();
+        $.post('/obras/etiquetas/remove/#{autor.id}/#{obra.id}'
+         , { etiqueta: li.find('.tag-text').html() }
+         , function(data) {
+          li.remove();
+         });
+      });
+
+      $('.edit_datos').click(function(e) {
+        e.preventDefault();
+
+        if($(this).hasClass('edit')) {
+          
+          var editDatos = $(this);
+
+          $.post('/autores/obras/save_datos/#{autor.id}/#{obra.id}', $('form.datos_edicion').serialize(), function() {
+            
+            editDatos.removeClass('edit');
+            editDatos.find('img').attr('src', '/images/icons/PNG/dark/16px/16_edit.png');
+            
+            $.get('/autores/obras/datos/#{autor.id}/#{obra.id}', function(data) {
+              $('#datos_contenido').hide().html(data).fadeIn('slow');
+            });
+
+          });
+        }
+        else {
+          $(this).addClass('edit');
+          $(this).find('img').attr('src', '/images/icons/cc/black/png/save_icon&16.png');
+          $.get('/autores/obras/datos_edicion/#{autor.id}/#{obra.id}', function(data) {
+            $('#datos_contenido').hide().html(data).fadeIn('slow');
+          });
+        }
+      });
+
+      $('#otrasObras').click(function() {
+        $('.otrasObras').css('left', $(this).position().left - $('.otrasObras').outerWidth() + $(this).outerWidth());
+        $('.otrasObras').toggle();
+      });
+
+      $('.tags-add').textext({
+        plugins : 'autocomplete ajax',
+        ajax : {
+          url : '/obras/etiquetas',
+            dataType : 'json',
+            cacheResults : true
+        },
+        ext: {
+          autocomplete: {
+            onEnterKeyPress: function(e) {
+              var el = $(this)[0];
+              if(!el.isDropdownVisible()) {
+                var val = $(this)[0].val();
+                $.post('/obras/etiquetar/#{autor.id}/#{obra.id}'
+                , { etiqueta: val }
+                , function(data) {
+                  $('.tags-cloud').append('<li class="tag"><a href="#"><span class="tag-text">'+val+'</span><span class="tag-delete"> x</span></a></li>')
+                  el.val('');
+                });
+              }
+              else {
+                el.selectFromDropdown();
+              }
+            }
+          }
+        }
+      });

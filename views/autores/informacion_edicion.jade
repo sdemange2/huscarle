@@ -1,0 +1,22 @@
+p Participación en los Jurados de la Exposiciones Nacionales
+  a#edit_jurado(href="#", class="button") 
+    img(src="/images/icons/cc/black/png/round_plus_icon&16.png")
+  ul
+    each cargo in autor.cargos
+      li 
+        input(type="text", value="#{cargo.exposicion}", style="width: 30px")
+        input(type="text", value="#{cargo.funcion}", style="width: 260px")
+
+p Carrera académica
+  a#edit_jurado(href="#", class="button") 
+    img(src="/images/icons/cc/black/png/round_plus_icon&16.png")
+
+p Galardones 
+  a#edit_jurado(href="#", class="button") 
+    img(src="/images/icons/cc/black/png/round_plus_icon&16.png")
+  ul
+    each galardon in autor.galardones
+      li 
+        input(type="text", value="#{galardon.exposicion}", style="width: 30px")
+        input(type="text", value="#{galardon.galardon}", style="width: 260px")
+        input(type="checkbox")

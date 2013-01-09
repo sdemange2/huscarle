@@ -1,0 +1,1894 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"re",
+				"required"
+			],
+			[
+				"mo",
+				"mongoose"
+			],
+			[
+				"obr",
+				"tituloObra"
+			],
+			[
+				"ob",
+				"obras"
+			],
+			[
+				"pr",
+				"project"
+			],
+			[
+				"ge",
+				"general"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"ex",
+				"exports"
+			],
+			[
+				"itm",
+				"itmLetter"
+			],
+			[
+				"it",
+				"itmLetter"
+			],
+			[
+				"a",
+				"autor"
+			],
+			[
+				"find",
+				"findById"
+			],
+			[
+				"titulo",
+				"tituloObra"
+			],
+			[
+				"p",
+				"public"
+			],
+			[
+				"obra",
+				"obras"
+			],
+			[
+				"autor",
+				"autores"
+			],
+			[
+				"titul",
+				"tituloObra"
+			],
+			[
+				"titu",
+				"tituloObra"
+			],
+			[
+				"tit",
+				"tituloObra"
+			],
+			[
+				"fun",
+				"funcion"
+			],
+			[
+				"expos",
+				"exposiciones"
+			],
+			[
+				"expo",
+				"exposicion"
+			],
+			[
+				"in",
+				"instanceof"
+			],
+			[
+				"exp",
+				"exposiciones"
+			],
+			[
+				"ga",
+				"galardones"
+			],
+			[
+				"scro",
+				"scrollbarPos"
+			],
+			[
+				"exposi",
+				"exposicion"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"func",
+				"funcion"
+			],
+			[
+				"Expo",
+				"Exposiciones"
+			],
+			[
+				"ta",
+				"tags"
+			],
+			[
+				"get",
+				"getStore"
+			],
+			[
+				"enc",
+				"encargosCargados"
+			],
+			[
+				"field",
+				"fieldLabel"
+			],
+			[
+				"me",
+				"metodologias"
+			],
+			[
+				"esta",
+				"estacionesCargadas"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"da",
+				"dataIndex"
+			],
+			[
+				"on",
+				"onWizardCancelled"
+			],
+			[
+				"ver",
+				"verEncargo"
+			],
+			[
+				"dat",
+				"dataview"
+			],
+			[
+				"bu",
+				"buttonPrimarys"
+			],
+			[
+				"butto",
+				"buttonPrimary"
+			],
+			[
+				"but",
+				"buttonPrimary"
+			],
+			[
+				"heade",
+				"headerToolbar"
+			],
+			[
+				"contr",
+				"controller"
+			],
+			[
+				"c",
+				"controllers"
+			],
+			[
+				"to",
+				"toggleGroup"
+			],
+			[
+				"la",
+				"layout"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"border",
+				"border-left"
+			],
+			[
+				"sort",
+				"sorters"
+			],
+			[
+				"pro",
+				"property"
+			],
+			[
+				"actio",
+				"actionName"
+			],
+			[
+				"id",
+				"indexOf"
+			],
+			[
+				"mod",
+				"modelName"
+			],
+			[
+				"control",
+				"controller"
+			],
+			[
+				"acti",
+				"actionName"
+			],
+			[
+				"contro",
+				"controller"
+			],
+			[
+				"param",
+				"params"
+			],
+			[
+				"dev",
+				"development"
+			],
+			[
+				"cont",
+				"controllerName"
+			],
+			[
+				"ap",
+				"appDir"
+			],
+			[
+				"app",
+				"appName"
+			],
+			[
+				"va",
+				"valoresNormales"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"x-btn",
+				"x-btn-inner"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"s",
+				"schema"
+			],
+			[
+				"fina",
+				"finalidad"
+			],
+			[
+				"finc",
+				"fincaRegistral"
+			],
+			[
+				"controll",
+				"controllerName"
+			],
+			[
+				"reso",
+				"resourceName"
+			],
+			[
+				"curr",
+				"currentEnv"
+			],
+			[
+				"su",
+				"suministro"
+			],
+			[
+				"sum",
+				"suministro"
+			],
+			[
+				"sumi",
+				"suministroSchema"
+			],
+			[
+				"clien",
+				"clienteSchema"
+			],
+			[
+				"cli",
+				"clientes"
+			],
+			[
+				"Cli",
+				"clienteSchema"
+			],
+			[
+				"clie",
+				"clienteSchema"
+			],
+			[
+				"do",
+				"doEncargo"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"encargo",
+				"encargosEntorno"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"load",
+				"loadRecord"
+			],
+			[
+				"ad",
+				"administracionUsuariosUsuario"
+			],
+			[
+				"usu",
+				"usuariosCambiosSeleccion"
+			],
+			[
+				"ps",
+				"psButton"
+			],
+			[
+				"strt",
+				"strtoupper"
+			],
+			[
+				"nombre",
+				"cambioNombreContacto"
+			],
+			[
+				"getC",
+				"getCodigosPostalesCombo"
+			],
+			[
+				"codi",
+				"codigoPostalSeleccionado"
+			],
+			[
+				"provi",
+				"provinciaCambiada"
+			],
+			[
+				"is_a",
+				"is_array"
+			],
+			[
+				"ext",
+				"ext-plugin	ext-plugin"
+			],
+			[
+				"encargos",
+				"encargosNuevo"
+			],
+			[
+				"enca",
+				"encargoNuevoValido"
+			],
+			[
+				"ini",
+				"iniciarEventosStoreListado"
+			],
+			[
+				"tes",
+				"testigosListado"
+			],
+			[
+				"e",
+				"ext-component-define	ext-define"
+			],
+			[
+				"text",
+				"textfield"
+			],
+			[
+				"sel",
+				"seleccionCategorioCambiada"
+			],
+			[
+				"cate",
+				"categoria"
+			],
+			[
+				"bo",
+				"bounds900913"
+			],
+			[
+				"Ca",
+				"Catastro"
+			],
+			[
+				"item",
+				"itemId"
+			],
+			[
+				"testigos",
+				"testigosNuevo"
+			],
+			[
+				"ref",
+				"referenciaCatastralTest"
+			],
+			[
+				"store",
+				"storeLoad"
+			],
+			[
+				"codigo",
+				"codigosPostalesNuevoTestigo"
+			],
+			[
+				"cod",
+				"codigosPostalesCargados"
+			],
+			[
+				"co",
+				"codigosPostalesNuevoTestigo"
+			],
+			[
+				"codig",
+				"codigosPostalesCombo"
+			],
+			[
+				"Codigos",
+				"CodigosPostales"
+			],
+			[
+				"CodigosPost",
+				"codigosPostalesCombo"
+			],
+			[
+				"api",
+				"apiVersion"
+			],
+			[
+				"muni",
+				"municipiosCombo"
+			],
+			[
+				"mu",
+				"municipiosCombo"
+			],
+			[
+				"prov",
+				"provinciaSeleccionada"
+			],
+			[
+				"data",
+				"dataTestigo"
+			],
+			[
+				"pre",
+				"preInsert"
+			],
+			[
+				"gua",
+				"guardarTestigo"
+			],
+			[
+				"ant",
+				"antesSeleccionarTestigo"
+			],
+			[
+				"pl",
+				"plugins"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/javier/proyectos/js/grupo/server/package.json",
+			"settings":
+			{
+				"buffer_size": 259,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/javier/proyectos/js/grupo/server/server.js",
+			"settings":
+			{
+				"buffer_size": 1082,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/javier/proyectos/js/grupo/server/config.js",
+			"settings":
+			{
+				"buffer_size": 163,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/javier/proyectos/js/grupo/server/resources/Users.js",
+			"settings":
+			{
+				"buffer_size": 1187,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/javier/proyectos/js/grupo/server/models/User.js",
+			"settings":
+			{
+				"buffer_size": 3171,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/javier/proyectos/js/grupo/server/README.md",
+			"settings":
+			{
+				"buffer_size": 14,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"to",
+				"View: Toggle Side Bar"
+			],
+			[
+				"t",
+				"View: Toggle Side Bar"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"si",
+				"View: Toggle Side Bar"
+			],
+			[
+				"Snippet: ext",
+				"Snippet: ext-define"
+			],
+			[
+				"tosi",
+				"View: Toggle Side Bar"
+			],
+			[
+				"Snippet: ex",
+				"Snippet: ext-define"
+			],
+			[
+				"togl",
+				"View: Toggle Side Bar"
+			],
+			[
+				"togls",
+				"View: Toggle Side Bar"
+			],
+			[
+				"togle",
+				"View: Toggle Side Bar"
+			],
+			[
+				"sid",
+				"View: Toggle Side Bar"
+			],
+			[
+				"set s p",
+				"Set Syntax: PHP"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set syn jas",
+				"Set Syntax: JavaScript (Rails)"
+			],
+			[
+				"sni",
+				"Set Syntax: Regular Expression"
+			],
+			[
+				"ma",
+				"Markdown Preview: current file in browser"
+			],
+			[
+				"mar",
+				"Markdown Preview: current file in browser"
+			],
+			[
+				"mark",
+				"Markdown Preview: current file in Sublime Text"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pap",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"contro",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"stack",
+				"Stackoverflow: Search from Input"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"colo",
+				"Color picker"
+			],
+			[
+				"pai",
+				"Package Control: Install Package"
+			],
+			[
+				"pkgc",
+				"Package Control: Install Package"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"cons",
+				"Set Syntax: R Console"
+			],
+			[
+				"com",
+				"Toggle Comment"
+			],
+			[
+				"comm",
+				"Toggle Block Comment"
+			],
+			[
+				"to si",
+				"View: Toggle Side Bar"
+			],
+			[
+				"tsb",
+				"View: Toggle Side Bar"
+			],
+			[
+				"sideb",
+				"View: Toggle Side Bar"
+			],
+			[
+				"toggle si",
+				"View: Toggle Side Bar"
+			],
+			[
+				"",
+				"Git: Log Current File"
+			],
+			[
+				"gi",
+				"Git: Log All"
+			]
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 111.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/javier/proyectos/js/grupo/server/node_modules/.bin/node-gyp",
+		"/home/javier/proyectos/js/grupo/server/resources",
+		"/home/javier/proyectos/js/grupo/server/package.js",
+		"/home/javier/proyectos/js/pintura/public/stylesheets/style.styl",
+		"/home/javier/proyectos/js/pintura/public/stylesheets/header.styl",
+		"/home/javier/proyectos/js/pintura/views/obras/galeria.jade",
+		"/home/javier/proyectos/js/pintura/views/layout.jade",
+		"/home/javier/proyectos/js/pintura/public/stylesheets/obras.styl",
+		"/home/javier/proyectos/js/pintura/public/stylesheets/droparea.css",
+		"/home/javier/proyectos/js/pintura/views/obras/imagenes_editar.jade",
+		"/home/javier/proyectos/js/pintura/views/obras/show.jade",
+		"/home/javier/proyectos/js/pintura/views/obras/titulo.jade",
+		"/home/javier/proyectos/js/pintura/public/stylesheets/author.styl",
+		"/home/javier/proyectos/js/pintura/public/stylesheets/_common.styl",
+		"/home/javier/proyectos/js/pintura/routes/obras.js",
+		"/home/javier/proyectos/js/pintura/app.js",
+		"/home/javier/proyectos/js/pintura/public/javascripts/galleria/themes/azur/galleria.azur.css",
+		"/home/javier/proyectos/js/pintura/public/javascripts/galleria/themes/azur/galleria.azur.js",
+		"/home/javier/proyectos/js/pintura/public/javascripts/jquery/jquery.textextjs.1.3.1.js",
+		"/home/javier/proyectos/js/pintura/views/obras/datos_edicion.jade",
+		"/home/javier/proyectos/js/pintura/views/obras/fuente.jade",
+		"/home/javier/proyectos/js/pintura/views/obras/fuente_edicion.jade",
+		"/home/javier/proyectos/js/pintura/views/obras/datos.jade",
+		"/home/javier/proyectos/js/pintura/models/Autores.js",
+		"/home/javier/proyectos/js/pintura/views/autores/show.jade",
+		"/home/javier/proyectos/js/pintura/views/index.jade",
+		"/home/javier/proyectos/js/pintura/views/obras/fuente_edicion.jada",
+		"/home/javier/proyectos/js/pintura/views/obras/fuente.jada",
+		"/home/javier/Descargas/mongo-huscarle-20121031-125813.js",
+		"/home/javier/proyectos/js/pintura/views/galeria.jade",
+		"/home/javier/proyectos/js/pintura/views/autores/obra.jade",
+		"/home/javier/proyectos/js/pintura/borrar.js",
+		"/home/javier/proyectos/js/pintura/routes/index.js",
+		"/home/javier/Documentos/contraseñas_ovh.txt",
+		"/home/javier/proyectos/js/pintura/views/autores/informacion.jade",
+		"/home/javier/proyectos/js/pintura/views/autores/nombre.jade",
+		"/home/javier/proyectos/js/pintura/views/autores/informacion_edicion.jade",
+		"/home/javier/proyectos/js/pintura/models/Obras.js",
+		"/home/javier/proyectos/js/pintura/public/javascripts/galleria/themes/classic/galleria.classic.css",
+		"/home/javier/proyectos/js/pintura/db/temp.js",
+		"/home/javier/proyectos/js/pintura/public/stylesheets/superslides.css",
+		"/home/javier/Escritorio/ag.js",
+		"/home/javier/.cache/.fr-cWZVRe/cracks office 2010/LEEME.txt",
+		"/home/javier/proyectos/js/pintura/public/stylesheets/layout.styl",
+		"/home/javier/proyectos/js/pintura/routes/exposiciones.js",
+		"/home/javier/proyectos/js/pintura/views/autores/biografia.jade",
+		"/home/javier/proyectos/js/pintura/views/exposiciones/show.jade",
+		"/home/javier/.gvfs/SFTP para javier en servidor/home/javier/Escritorio/mapreduce.js",
+		"/home/javier/proyectos/js/pintura/public/javascripts/huscarle/src/biografia.js",
+		"/home/javier/proyectos/js/pintura/public/stylesheets/biografia.styl",
+		"/home/javier/proyectos/js/pintura/public/javascripts/biografia.js",
+		"/home/javier/Escritorio/autoresgalardones.csv",
+		"/home/javier/Escritorio/biografias.md",
+		"/home/javier/proyectos/js/pintura/public/stylesheets/galeria.css",
+		"/home/javier/proyectos/js/pintura/public/javascripts/galeria.js",
+		"/home/javier/Escritorio/biografias.xml",
+		"/home/javier/proyectos/js/pintura/public/stylesheets/galeria.js",
+		"/home/javier/proyectos/js/pintura/views/mapa/index.jade",
+		"/home/javier/proyectos/js/pintura/public/javascripts/mapa.js",
+		"/home/javier/proyectos/js/pintura/public/stylesheets/exposiciones.styl",
+		"/home/javier/proyectos/js/pintura/views/exposiciones/index.jade",
+		"/home/javier/proyectos/js/pintura/views/autores/query.jade",
+		"/home/javier/proyectos/js/pintura/models/Exposiciones.js",
+		"/home/javier/proyectos/js/pintura/routes/mapa.js",
+		"/home/javier/proyectos/js/pintura/routes/mapas.js",
+		"/home/javier/proyectos/js/pintura/views/mapas/index.jade",
+		"/home/javier/proyectos/js/pintura/models/Exposicíon.js",
+		"/home/javier/proyectos/js/pintura/public/stylesheets/page-header.styl",
+		"/home/javier/proyectos/js/huscarle/views/autores/show.jade",
+		"/home/javier/proyectos/js/pintura/routes/exposciones.js",
+		"/home/javier/proyectos/js/pintura/views/_partials/author.jade",
+		"/home/javier/proyectos/js/huscarle/models/exposicion.js",
+		"/home/javier/proyectos/js/huscarle/views/exposiciones.jade",
+		"/home/javier/proyectos/js/huscarle/package.json",
+		"/home/javier/proyectos/trabajo/via/web/clientes/web/app/widget/ProvinciasCombo.js",
+		"/home/javier/proyectos/trabajo/via/web/clientes/web/app/store/Provincias.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/widget/combo/Provincias.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/widget/combo/Municipios.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/widget/combo/CodigosPostales.js",
+		"/home/javier/proyectos/js/viajs/app/models/encargos.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/view/encargos/Nuevo.js",
+		"/home/javier/proyectos/js/viajs/app/models/municipios.js",
+		"/home/javier/proyectos/js/viajs/app/models/codigosPostales.js",
+		"/home/javier/proyectos/js/viajs/app/controllers/codigosPostales.js",
+		"/home/javier/proyectos/js/viajs/app/controllers/municipios.js",
+		"/home/javier/proyectos/js/viajs/app/config/routes.js",
+		"/home/javier/proyectos/js/viajs/app/controllers/codigospostales.js",
+		"/home/javier/proyectos/js/viajs/app/controllers/provincias.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/view/encargos/List.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/controller/Encargos.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/view/encargos/Editar.js",
+		"/home/javier/proyectos/js/viajs/app/views/stylesheets/administracion.styl",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/store/Encargos.js",
+		"/home/javier/proyectos/js/viajs/app/controllers/encargos.js",
+		"/home/javier/proyectos/js/viajs/app/models/finalidades.js",
+		"/home/javier/proyectos/js/viajs/app/models/provincias.js",
+		"/home/javier/proyectos/js/viajs/lib/pilajs/crud.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/store/Finalidades.js",
+		"/home/javier/proyectos/js/viajs/app/controllers/finalidades.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/template/Encargo.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/controller/Router.js",
+		"/home/javier/proyectos/js/viajs/app/views/administracion/index.jade",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/controller/OpcionesGenerales.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/view/opcionesgenerales/Opciones.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/view/opcionesgenerales/Grupos.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/view/opcionesgenerales/Listado.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/view/opcionesgenerales/Panel.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/view/metodologias/Panel.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/controller/Metodologias.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/controller/Finalidades.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/view/metodologias/Listado.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/view/metodologias/Metodologia.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/view/finalidades/Listado.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/view/finalidades/Finalidad.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/view/finalidades/Panel.js",
+		"/home/javier/proyectos/js/viajs/app/views/stylesheets/grid.styl",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/view/aemet/ValoresNormales.js",
+		"/home/javier/proyectos/js/viajs/app/controllers/aemet.js",
+		"/home/javier/proyectos/js/viajs/app/models/aemetValoresNormales.js",
+		"/home/javier/proyectos/js/viajs/app/models/aemetEstaciones.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/template/EstacionTitulo.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/controller/Aemet.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/view/aemet/Panel.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/view/aemet/Estaciones.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/view/limitesvalidacion/Panel.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/view/parametrostasacion/Panel.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/controller/LimitesValidacion.js",
+		"/home/javier/proyectos/js/viajs/public/javascripts/via/web/app/controller/ParametrosTasacion.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"conf",
+			"mongo",
+			"require('./resources/Users')",
+			"'",
+			"result",
+			"ul",
+			"result",
+			"tituloObra",
+			"autor",
+			"    position: absolute;\n    top:0;\n    width: 100%;\n    height: 100%;\n}\n.droparea input, .multiple input {\n    cursor: pointer; \n    opacity: 0; \n}\n.droparea .instructions, .multiple .instructions {\n    border: 2px dashed #ddd;\n    opacity: .8;\n}\n.droparea .instructions.over, .multiple .instructions.over {\n    border: 2px dashed #000;\n    background: #ffa;\n}\n.droparea .progress, .multiple .progress {\n    position:absolute;\n    bottom: 0;\n    width: 100%;\n    height: 0;\n    color: #fff;\n    background: #6b0;\n}",
+			"Obra",
+			"obra",
+			"Obra",
+			"obra",
+			"0",
+			"play",
+			"títulos",
+			"d(",
+			"classic",
+			"#galleria",
+			"TextExt",
+			"informacionAdicionalDeLaObra",
+			"\"$",
+			"Number",
+			"$(this)",
+			"informacionAdicionalDeLaObra",
+			"name",
+			"toggle()",
+			"()",
+			"nombre",
+			"autor.obras[j]",
+			"obras",
+			"obra",
+			")",
+			"fechaInicioObra",
+			"informacion",
+			"nombre",
+			"function",
+			")",
+			"edit_basic_auth",
+			"etiqueta",
+			"etiquetas",
+			"10",
+			"#list",
+			"or",
+			"nombre",
+			"String",
+			"\":",
+			"></script>",
+			"| <script src=/",
+			"funcion",
+			"cargo",
+			"();",
+			"/javascipts/",
+			"..",
+			"../",
+			"CASTRO, alejando",
+			"CASA LAIGLESIA",
+			"BILBAO MARTÍNEZ, Gonzalo",
+			"BERUETE Y MORET, Aureliano",
+			"BENEDITO Y VIVES, Manuel",
+			"AVENDAÑO, Serafín",
+			"ALCÁNTARA",
+			"ALCÁNTARA, Francisco",
+			"",
+			"numerosos",
+			"",
+			"Álvarez Du",
+			"Álvarez",
+			"cargo",
+			"Exposiciones",
+			"Autores",
+			"3",
+			"provinciaDeDefuncion",
+			"Nacimiento",
+			"autores",
+			"user",
+			"Cls",
+			"hasCls",
+			"$(this)",
+			"nombre",
+			"p",
+			"div",
+			"municipios",
+			"Municipios",
+			"provincia",
+			"provincias",
+			"finalidades",
+			"encargos",
+			"usuarios",
+			"strong",
+			"finalidades",
+			"Finalidades",
+			"Finalidad",
+			"finalidades",
+			"Listado",
+			"finalidades",
+			"Finalidad",
+			"finalidades",
+			"Metodologia",
+			"metodologias",
+			"Panel",
+			"this",
+			"T",
+			",",
+			"flex: 1",
+			"Estaciones",
+			"\":",
+			"Estaciones",
+			"h1",
+			"parametrostasacion",
+			"ParametrosTasacion",
+			"Categorías edificios",
+			"Textos ganadería",
+			"Textos ganadería\n      span.text Textos ganadería",
+			"Informes",
+			"Clientes",
+			"Next",
+			"of",
+			"url.url",
+			"aemet",
+			"Viewport",
+			"viewport",
+			"list",
+			"Testigos",
+			":",
+			"; ",
+			":"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"../media/",
+			"}",
+			"",
+			"ps-button",
+			".ps-button",
+			"opcionesGeneralesGrupos",
+			"sublime",
+			"http://www.newbridgegreen.com/clifton/",
+			"read",
+			"grupos",
+			"MasasCultivo",
+			"masasCultivo",
+			"edificios",
+			"Edificios",
+			"$mandango",
+			"Ps.tasaciones.tasacion.secciones.registral.FincaRegistral",
+			"Tasaciones",
+			"store: Ext.create('Via.view.tasaciones.data.OpcionesStore')",
+			"secciones/",
+			"dataIndex",
+			"Clientes",
+			"clientes",
+			": string",
+			"estaciones",
+			"=",
+			"save",
+			"send",
+			"readAll",
+			"readOne",
+			"Mensajes",
+			"mensajes",
+			"});",
+			" };",
+			"metodologia",
+			"empty",
+			": float",
+			"",
+			"CodigosPostales",
+			"CodigoPostal",
+			"codigospostales",
+			"CodigosPostales",
+			"codigospostales",
+			"LimiteValidacion",
+			"limitesvalidacion",
+			"LimitesValidacion",
+			"LimiteValidacion",
+			"limitesvalidacion",
+			"LimitesValidacion",
+			"limitesvalidacion",
+			"LimitesValidacion",
+			"limitevalidacion",
+			"showAll",
+			"opciones",
+			"$fincaRegistral",
+			"record",
+			": string",
+			"' },",
+			"",
+			"' },",
+			"riego",
+			" }",
+			"' type: 'integer' }",
+			"' }",
+			"}",
+			", type: 'boolean' }",
+			"type",
+			", type: 'boolean' }",
+			"Tasaciones",
+			"tasaciones",
+			"Testigos",
+			"testigos",
+			"comarcas",
+			"provincias",
+			"comunidades",
+			"Territorio",
+			"territorio",
+			"$repository",
+			"",
+			"integer",
+			"interger",
+			"das",
+			"html",
+			"abonos",
+			"80",
+			"riego",
+			"Riego",
+			"alternativas",
+			"Alternativas",
+			"caracteristicasAgrologicas",
+			"CaracteristicasAgrologicas",
+			"riego",
+			"alternativas",
+			"caracteristicasagrologicas",
+			"infraestructurainterior",
+			"Descripcion",
+			"descripcion",
+			"infraestructuraInterior",
+			"InfraestructuraInterior",
+			"lindero",
+			"linderos",
+			"Linderos",
+			"Emplazamiento",
+			"emplazamiento",
+			"tenencia",
+			"Tenencia"
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/javier/proyectos/js/grupo/server/package.json",
+					"settings":
+					{
+						"buffer_size": 259,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								203,
+								203
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/javier/proyectos/js/grupo/server/server.js",
+					"settings":
+					{
+						"buffer_size": 1082,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								987,
+								987
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/javier/proyectos/js/grupo/server/config.js",
+					"settings":
+					{
+						"buffer_size": 163,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								59,
+								59
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/javier/proyectos/js/grupo/server/resources/Users.js",
+					"settings":
+					{
+						"buffer_size": 1187,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								536,
+								536
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 47.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/javier/proyectos/js/grupo/server/models/User.js",
+					"settings":
+					{
+						"buffer_size": 3171,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1774,
+								1774
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 268.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/javier/proyectos/js/grupo/server/README.md",
+					"settings":
+					{
+						"buffer_size": 14,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14,
+								14
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.git":
+	{
+		"height": 88.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"ap",
+				"app.js"
+			],
+			[
+				"obr",
+				"public/stylesheets/obras.styl"
+			],
+			[
+				"obras",
+				"public/stylesheets/obras.styl"
+			],
+			[
+				"ti",
+				"views/obras/titulo.jade"
+			],
+			[
+				"app",
+				"app.js"
+			],
+			[
+				"ind",
+				"routes/index.js"
+			],
+			[
+				"ob",
+				"routes/obras.js"
+			],
+			[
+				"autor",
+				"models/Autores.js"
+			],
+			[
+				"sh",
+				"views/obras/show.jade"
+			],
+			[
+				"sho",
+				"views/autores/show.jade"
+			],
+			[
+				"o",
+				"public/stylesheets/obras.styl"
+			],
+			[
+				"styl",
+				"public/stylesheets/style.styl"
+			],
+			[
+				"tit",
+				"views/obras/titulo.jade"
+			],
+			[
+				"show",
+				"views/autores/show.jade"
+			],
+			[
+				"cru",
+				"lib/pilajs/crud.js"
+			],
+			[
+				"nu",
+				"public/javascripts/via/web/app/view/encargos/Nuevo.js"
+			],
+			[
+				"nuevo",
+				"public/javascripts/via/web/app/view/encargos/Nuevo.js"
+			],
+			[
+				"d",
+				"app/config/db.js"
+			],
+			[
+				"index.",
+				"app/config/index.js"
+			],
+			[
+				"user.",
+				"app/controllers/user.js"
+			],
+			[
+				"/controllers/",
+				"app/controllers/index.js"
+			],
+			[
+				"requisi",
+				"/home/javier/Escritorio/calidad/tipoRequisito.yml"
+			],
+			[
+				"a",
+				"app.js"
+			],
+			[
+				"ento",
+				"via/web/clientes/web/app/view/encargos/Entorno.js"
+			],
+			[
+				"grid.",
+				"via/web/librerias/ps/ux/Grid.js"
+			],
+			[
+				"list",
+				"via/web/clientes/web/app/view/testigos/Listado.js"
+			],
+			[
+				"testigos.",
+				"via/web/clientes/web/app/controller/Testigos.js"
+			],
+			[
+				"testigosento",
+				"via/web/clientes/web/app/view/testigos/Entorno.js"
+			],
+			[
+				"testigos.js",
+				"via/web/clientes/web/app/controller/Testigos.js"
+			],
+			[
+				"lis",
+				"via/web/clientes/web/app/view/testigos/Listado.js"
+			],
+			[
+				"tes",
+				"via/src/PS/Bundle/APIBundle/Model/Testigos.php"
+			],
+			[
+				"terricont",
+				"via/src/PS/Bundle/APIBundle/Controller/TerritorioController.php"
+			],
+			[
+				"municipiosque",
+				"via/src/Model/PSAPIBundle/Base/TerritorioMunicipiosQuery.php"
+			],
+			[
+				"territorio",
+				"via/src/Model/PSAPIBundle/TerritorioMunicipiosQuery.php"
+			],
+			[
+				"mun.ym",
+				"via/src/PS/Bundle/APIBundle/Resources/config/mandango/TerritorioMunicipios.yml"
+			],
+			[
+				"testigos.yml",
+				"via/src/PS/Bundle/APIBundle/Resources/config/mandango/Testigos.yml"
+			],
+			[
+				"testigos",
+				"via/src/PS/Bundle/APIBundle/Controller/TestigosController.php"
+			],
+			[
+				"index.html.",
+				"via/src/PS/Bundle/ViaBundle/Resources/views/Default/index.html.twig"
+			],
+			[
+				"encargo",
+				"via/src/PS/Bundle/APIBundle/Controller/EncargosController.php"
+			],
+			[
+				"encar",
+				"via/web/clientes/web/app/view/encargos/Encargo.js"
+			],
+			[
+				"index.t",
+				"via/src/PS/Bundle/ViaBundle/Resources/views/Default/index.html.twig"
+			],
+			[
+				"edicio",
+				"via/web/clientes/web/app/view/testigos/Edicion.js"
+			],
+			[
+				"lista",
+				"via/web/clientes/web/app/view/testigos/Listado.js"
+			],
+			[
+				"entor",
+				"via/web/clientes/web/app/view/testigos/Entorno.js"
+			],
+			[
+				"testigosco",
+				"via/src/PS/Bundle/APIBundle/Controller/TestigosController.php"
+			],
+			[
+				"testigos.php",
+				"via/src/Model/PSAPIBundle/Testigos.php"
+			],
+			[
+				"testigo.y",
+				"via/src/PS/Bundle/APIBundle/Resources/config/mandango/Testigos.yml"
+			],
+			[
+				"inicio",
+				"via/web/clientes/web/app/view/administracion/textosganaderia/Inicio.js"
+			],
+			[
+				"testigo",
+				"via/src/PS/Bundle/APIBundle/Model/Testigos.php"
+			],
+			[
+				"grid",
+				"via/web/librerias/ps/ux/Grid.js"
+			],
+			[
+				"ini",
+				"via/web/clientes/web/app/view/administracion/opcionesgenerales/Inicio.js"
+			],
+			[
+				"usuarios",
+				"via/src/PS/Bundle/APIBundle/Controller/UsuariosController.php"
+			],
+			[
+				"acce",
+				"via/web/clientes/web/app/view/administracion/usuarios/Accesos.js"
+			],
+			[
+				"metodolo",
+				"via/src/PS/Bundle/APIBundle/Controller/MetodologiasController.php"
+			],
+			[
+				"metodo",
+				"via/src/Model/PSAPIBundle/Metodologías.php"
+			],
+			[
+				"psbutto",
+				"via/web/librerias/ps/ux/Button.js"
+			],
+			[
+				"testigo.js",
+				"via/web/clientes/web/app/view/testigos/Testigo.js"
+			],
+			[
+				"inicio.js",
+				"via/web/clientes/web/app/view/administracion/usuarios/Inicio.js"
+			],
+			[
+				"acceso.j",
+				"via/web/clientes/web/app/view/administracion/usuarios/Accesos.js"
+			],
+			[
+				"his",
+				"via/web/clientes/web/app/History.js"
+			],
+			[
+				"he",
+				"via/src/PS/Bundle/ViaBundle/Resources/views/Default/header.html.twig"
+			],
+			[
+				"man",
+				"PS/Symfony/Extjs/Adapter/Mandango.php"
+			],
+			[
+				"opcioco",
+				"via/src/PS/Bundle/APIBundle/Controller/OpcionesGeneralesController.php"
+			],
+			[
+				"grid.js",
+				"via/web/librerias/ps/ux/Grid.js"
+			],
+			[
+				"usua",
+				"via/src/Model/PSUsuarioBundle/Usuario.php"
+			],
+			[
+				"usuarios/i",
+				"via/web/clientes/web/app/view/administracion/usuarios/Inicio.js"
+			],
+			[
+				"listd",
+				"via/web/clientes/web/app/view/testigos/Listado.js"
+			],
+			[
+				"index.tw",
+				"via/src/PS/Bundle/ViaBundle/Resources/views/Administracion/index.html.twig"
+			],
+			[
+				"he.html.ti",
+				"via/src/PS/Bundle/ViaBundle/Resources/views/Default/header.html.twig"
+			],
+			[
+				"header.t",
+				"via/src/PS/Bundle/ViaBundle/Resources/views/Default/header.html.twig"
+			],
+			[
+				"index.twi",
+				"via/src/PS/Bundle/ViaBundle/Resources/views/Default/index.html.twig"
+			],
+			[
+				"admin",
+				"via/web/clientes/web/app/controller/Administracion.js"
+			],
+			[
+				"bdee",
+				"src/Model/Base/BdEEntidades.php"
+			],
+			[
+				"bde",
+				"src/Model/BdEEntidades.php"
+			],
+			[
+				"document",
+				"vendor/mandango/src/Mandango/Document/Document.php"
+			],
+			[
+				"terr",
+				"src/PS/OpcionesBundle/Controller/TerritorioController.php"
+			],
+			[
+				"hi",
+				"src/Model/Base/HistoricoCultivo.php"
+			],
+			[
+				"noti",
+				"src/Model/Notificaciones.php"
+			],
+			[
+				"api/en",
+				"src/PS/ViaBundle/Resources/config/api/encargos.yml"
+			],
+			[
+				"encargo.ym",
+				"app/config/mandango/Encargo.yml"
+			],
+			[
+				"encargosco",
+				"src/PS/ViaBundle/Controller/EncargosController.php"
+			],
+			[
+				"ro",
+				"src/PS/ViaBundle/Resources/config/routing.yml"
+			],
+			[
+				"encargorep",
+				"src/Model/EncargoRepository.php"
+			],
+			[
+				"configura",
+				"app/config/mandango/ConfiguracionGeneral.yml"
+			],
+			[
+				"encargo.p",
+				"src/Model/Encargo.php"
+			],
+			[
+				"rou",
+				"src/PS/ViaBundle/Resources/config/routing.yml"
+			],
+			[
+				"notifre",
+				"src/Model/NotificacionesRepository.php"
+			],
+			[
+				"usuarior",
+				"src/Model/UsuarioRepository.php"
+			],
+			[
+				"historialen",
+				"src/Model/HistorialEncargosRepository.php"
+			],
+			[
+				"encargo.",
+				"app/config/mandango/Encargo.yml"
+			],
+			[
+				"routing.yml",
+				"src/PS/ViaBundle/Resources/config/routing.yml"
+			],
+			[
+				"encargo.js",
+				"web/via/app/model/encargos/Encargo.js"
+			],
+			[
+				"encargos",
+				"src/Model/EncargoRepository.php"
+			],
+			[
+				"encargos.php",
+				"src/Model/EncargoRepository.php"
+			],
+			[
+				"encargoscon",
+				"src/PS/ViaBundle/Controller/EncargosController.php"
+			],
+			[
+				"arr",
+				"vendor/ps/lib/PS/ArrayConvert.php"
+			],
+			[
+				"extjs.t",
+				"app/Resources/views/base.extjs.twig"
+			],
+			[
+				"listad",
+				"web/via/app/view/encargos/Listado.js"
+			],
+			[
+				"encargos.",
+				"src/PS/ViaBundle/Resources/config/routing/encargos.yml"
+			],
+			[
+				"icon",
+				"web/styles/iconos.css"
+			],
+			[
+				"usuario.yml",
+				"app/config/mandango/Usuario.yml"
+			],
+			[
+				"usuarios.",
+				"src/PS/ViaBundle/Resources/config/routing/usuarios.yml"
+			],
+			[
+				"usu",
+				"src/PS/ViaBundle/Controller/UsuariosController.php"
+			],
+			[
+				"usuariosco",
+				"src/PS/ViaBundle/Controller/UsuariosController.php"
+			],
+			[
+				"usuario",
+				"src/PS/ViaBundle/Resources/config/routing/usuarios.yml"
+			],
+			[
+				"menu.js",
+				"web/via/ps/micuenta/Menu.js"
+			],
+			[
+				"banco.js",
+				"web/via/ps/micuenta/DatosBancarios.js"
+			],
+			[
+				"profes",
+				"web/via/ps/micuenta/InformacionProfesional.js"
+			],
+			[
+				"persona.yml",
+				"app/config/mandango/Persona.yml"
+			],
+			[
+				"sesi",
+				"src/PS/ViaBundle/Resources/config/routing/sesion.yml"
+			],
+			[
+				"usuarioscon",
+				"src/PS/ViaBundle/Controller/UsuariosController.php"
+			],
+			[
+				"bootstrap.js",
+				"web/via/ps/micuenta/Bootstrap.js"
+			],
+			[
+				"usuario.j",
+				"web/via/ps/micuenta/Usuario.js"
+			],
+			[
+				"/correo/en",
+				"web/via/app/view/administracion/correo/Entorno.js"
+			],
+			[
+				"informacionpr",
+				"web/via/ps/micuenta/InformacionProfesional.js"
+			],
+			[
+				"datosb",
+				"web/via/ps/micuenta/DatosBancarios.js"
+			],
+			[
+				"seguri",
+				"web/via/ps/micuenta/Seguridad.js"
+			],
+			[
+				"elimi",
+				"web/via/ps/micuenta/EliminarCuenta.js"
+			],
+			[
+				"ico",
+				"web/styles/iconos.css"
+			],
+			[
+				"ps_a",
+				"web/styles/ps_account_menu.css"
+			],
+			[
+				"sesion",
+				"src/PS/ViaBundle/Resources/config/routing/sesion.yml"
+			],
+			[
+				"correo",
+				"src/PS/ViaBundle/Controller/CorreoController.php"
+			],
+			[
+				"recu",
+				"src/PS/ViaBundle/Resources/views/Usuarios/recuperarPassword.html.twig"
+			],
+			[
+				"extjs",
+				"app/Resources/views/base.extjs.twig"
+			],
+			[
+				"importar",
+				"src/PS/ViaBundle/Resources/config/routing/importarTAS.yml"
+			],
+			[
+				"via.css",
+				"web/styles/via.css"
+			],
+			[
+				"extjs.",
+				"app/Resources/views/base.extjs.twig"
+			],
+			[
+				"ver.",
+				"src/PS/ViaBundle/Resources/views/Encargos/ver.html.twig"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 304.0,
+	"status_bar_visible": true
+}
